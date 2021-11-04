@@ -1,0 +1,15 @@
+R = 1;
+phi = 45;
+y = 1;
+y = @(x) R/sin(phi) - x*cos(phi)/sin(phi);
+
+% fplot(f,xinterval) plots over the specified interval. 
+% Specify the interval as a two-element vector of the form [xmin xmax].
+f(x) = y;
+fplot(y, [-50, 50]);
+
+%for x = 1:10
+%    plot(x, y);
+%    xlim([-10,20])
+%    axis equal
+%end
