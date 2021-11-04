@@ -81,7 +81,7 @@ while (Xcm(1) < 10/sqrt(2))
     end
     step=step+1;
 end
-movieframes(1)=[];
+movieframes(1)=[]; % this line deletes the first frame (blank frame)
    
 function [h, grdh] = calcH(x,slope) % this is the function that makes our ground
     % real life parameters make c = 1
