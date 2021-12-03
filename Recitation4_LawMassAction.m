@@ -23,8 +23,6 @@ odefun = @(t,y) EnzymeKinetics(t,y,kf,kr,kcat);
 slope=kcat*S0/(S0+kr/kf)*E0;
 perror = ((y(end,4)-slope*t(end))/(y(end,4)))*100
 
-
-
 function dydt = EnzymeKinetics(t,y,kf,kr,kcat)
     S = y(1);
     E = y(2);
